@@ -21,11 +21,11 @@ Arrow functions are a shorter and cleaner way to write functions. They work like
 
 <h1>4. How destructuring works in ES6</h1>
 
-Destructuring lets you quickly extract values from arrays or objects into separate variables. It reduces extra code and makes assignments shorter.
+Destructuring lets us quickly extract values from arrays or objects into separate variables. It reduces extra code and makes assignments shorter.
 <br>Example: const { name, age } = { name: "John", age: 25 }
 
 <h1>5. Template literals in ES6</h1>
 
-Template literals allow you to create strings more easily. You can insert variables directly and write multi-line text. They are cleaner than the old plus-sign string joining method.
+Template literals allow us to create strings more easily. We can insert variables directly and write multi-line text. They are cleaner than the old plus-sign string joining method.
 <br>Example: const msg = `Hello ${name}!`;
 
