@@ -12,7 +12,7 @@ let plants = [];
 let categories = [];
 let cart = {};
 
-// Price formatting
+// Price
 const priceText = n => "৳" + n;
 
 const $ = sel => document.querySelector(sel);
