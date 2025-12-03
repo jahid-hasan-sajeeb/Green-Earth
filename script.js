@@ -112,7 +112,7 @@ function renderPlants(list) {
             ${p.name}
           </button>
 
-          <p class="text-xs text-gray-500 mt-2">${p.description}</p>
+          <p class="text-xs text-gray-500 mt-2 line-clamp-3">${p.description}</p>
 
           <div class="flex justify-between mt-3">
             <span class="text-xs bg-emerald-100 px-2 py-1 rounded">${p.category}</span>
