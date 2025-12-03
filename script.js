@@ -22,11 +22,12 @@ let plantModal, modalImage, modalName, modalCategory, modalDesc, modalPrice, mod
 
 // All Plants 
 async function loadPlants() {
-  plantsStatus.textContent = "Loading plants...";
+  showSpinner();
 
   const res = await fetch(API.allPlants);
   const data = await res.json();
 
+  hideSpinner();
   plants = data.plants;
   renderPlants(plants);
 
@@ -51,14 +52,14 @@ function renderCategories() {
 
   let html = `
     <li>
-      <button data-cat="all" class="w-full px-3 py-2 rounded bg-emerald-700 text-white">All Trees</button>
+      <button data-cat="all" class="w-full text-left px-3 py-2 rounded bg-emerald-700 text-white">All Trees</button>
     </li>
   `;
 
   categories.forEach(cat => {
     html += `
       <li>
-        <button data-cat="${cat.id}" class="w-full px-3 py-2 rounded hover:bg-emerald-50 text-left">
+        <button data-cat="${cat.id}" class="w-full px-3 py-2 rounded hover:bg-lime-500 text-left">
           ${cat.category_name}
         </button>
       </li>
@@ -245,3 +246,21 @@ document.addEventListener("DOMContentLoaded", () => {
   loadCategories();
   renderCart();
 });
+
+
+function showSpinner() {
+  const s = document.getElementById('spinner');
+  if (s) {
+    s.classList.remove('hidden');
+    s.classList.add('flex');
+  }
+}
+
+function hideSpinner() {
+  const s = document.getElementById('spinner');
+  if (s) {
+    s.classList.add('hidden');
+    s.classList.remove('flex');
+  }
+}
+

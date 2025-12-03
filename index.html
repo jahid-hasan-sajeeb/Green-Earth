@@ -10,7 +10,7 @@
 
 <body class="bg-gray-100">
     
-    <header>
+    <header">
 
   <!-- NAVBAR -->
   <nav class="bg-green-700 text-white">
@@ -18,12 +18,12 @@
       <h1 class="text-xl font-semibold">Green Earth</h1>
 
       <ul class="hidden md:flex space-x-8 text-white/90 font-medium">
-        <li><a href="#" class="hover:text-white">About</a></li>
-        <li><a href="#" class="hover:text-white">Gallery</a></li>
-        <li><a href="#" class="hover:text-white">Plant a Tree</a></li>
+        <li><a href="#" class="hover:text-white hover:font-bold">About</a></li>
+        <li><a href="#" class="hover:text-white hover:font-bold">Gallery</a></li>
+        <li><a href="#" class="hover:text-white hover:font-bold">Plant a Tree</a></li>
       </ul>
 
-      <button class="bg-yellow-400 text-green-700 px-4 py-2 rounded-full font-semibold hover:bg-yellow-300">
+      <button class="bg-yellow-500 text-black px-4 py-2 rounded-full font-semibold hover:bg-yellow-300">
         Plant a Tree
       </button>
     </div>
@@ -31,12 +31,12 @@
 
   <!-- HERO SECTION -->
   <section class="bg-green-100 py-20 relative overflow-hidden">
-    <div class="max-w-4xl mx-auto text-center px-6">
-      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900">
+    <div class="mx-auto text-center">
+      <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900">
         Plant a Tree, Grow a Future
       </h2>
 
-      <p class="mt-4 text-gray-700 text-lg">
+      <p class="mt-4 text-gray-700 w-2/3 mx-auto text-sm md:text-lg ">
         Join our mission to plant 1 million trees and make the Earth greener
         for future generations.
       </p>
@@ -61,7 +61,7 @@
 
   <main>
 
-    <section class="bg-emerald-50/80 py-16">
+    <section class="bg-emerald-50/80 py-16 px-10 md:px-20">
 
         <section class="py-10 bg-emerald-50">
   <div class="container mx-auto px-6">
@@ -73,10 +73,10 @@
     
     <!-- LEFT: Categories -->
     <aside class="col-span-12 lg:col-span-2">
-      <h4 class="font-medium text-sm text-gray-700 mb-3">Categories</h4>
+      <h4 class="font-medium text-sm text-emerald-900 mb-3 text-center">Categories</h4>
       <ul id="categoriesList" class="space-y-2 text-sm">
         <li>
-          <button class="w-full text-left px-3 py-2 rounded bg-emerald-700 text-white" data-cat="all">
+          <button class="px-3 py-2 rounded bg-emerald-700 text-white" data-cat="all">
             All Trees
           </button>
         </li>
@@ -117,7 +117,7 @@
 
   <div class="container mx-auto px-6">
 
-    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+    <div class="max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
               <!-- img -->
       <div class="order-1 lg:order-1">
         <div class="rounded-xl overflow-hidden bg-white shadow-md">
@@ -159,7 +159,7 @@
 
     <div class="mt-12"></div>
  
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-7xl mx-auto">
     <h3 class="text-center text-2xl font-semibold text-emerald-900 mb-8">
         Our Impact
     </h3>
@@ -279,6 +279,12 @@
     </div>
   </div>
 </div>
+
+<!-- Loading Spinner -->
+<div id="spinner" class="fixed inset-0 bg-black/20 hidden items-center justify-center z-50">
+  <div class="w-10 h-10 border-4 border-white border-t-transparent rounded-full animate-spin"></div>
+</div>
+
 
     <script src="script.js"></script>
 </body>
